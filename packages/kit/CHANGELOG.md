@@ -1,5 +1,17 @@
 # @sveltejs/kit
 
+## 1.0.0-next.120
+
+### Minor Changes
+
+- 9fbaeda: fix attribute validation in generated script tag
+
+### Patch Changes
+
+- 0d69e55: Add generic type for session
+- 325c223: Improve RequestHandler and EndpointOutput type declarations.
+- ae3ef19: Fail if config.kit.appDir starts or ends with a slash
+
 ## 1.0.0-next.119
 
 ### Patch Changes
