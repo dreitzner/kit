@@ -1,8 +1,8 @@
 import preprocess from 'svelte-preprocess';
-import adnetlify from '@sveltejs/adapter-netlify';
+// import adnetlify from '@sveltejs/adapter-netlify';
 import adnode from '@sveltejs/adapter-node';
-import adstatic from '@sveltejs/adapter-static';
-import advercel from '@sveltejs/adapter-vercel';
+// import adstatic from '@sveltejs/adapter-static';
+// import advercel from '@sveltejs/adapter-vercel';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -15,10 +15,10 @@ const config = {
 		target: '#svelte',
 		i18n: {
 			defaultLocale: 'en',
-			locales: ['de']
+			locales: ['en', 'de']
 		},
-		adapter: adnetlify()
-		// adapter: adnode()
+		// adapter: adnetlify()
+		adapter: adnode()
 		// adapter: adstatic()
 		// adapter: advercel()
 	}
